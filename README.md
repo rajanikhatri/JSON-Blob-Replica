@@ -4,20 +4,41 @@
 
 Welcome to my personal JSON Blob Website, which functions similarly to the well-known JSON Blob website (https://jsonblob.com). This platform enables users to create, store, retrieve, update, and delete JSON data through a straightforward API. Each JSON data piece is assigned a unique identifier, which serves as the link for accessing and managing it.
 
-### Getting Started
 
-To get started with the JSON Blob Website, follow these steps:
+# Getting Started with the JSON Blob Website
 
-- Visit the Website: Navigate to the JSON Blob Website using the provided URL. Please use localhost/${portnumber}. Port number can be user defined.  
+To get started, follow these steps:
+
+1. **Open Visual Studio Code**
+   - Load the project into Visual Studio Code.
+
+2. **Open the Terminal**
+   - You can open the terminal in Visual Studio Code by pressing `Ctrl + ` ` (backtick) or going to `View > Terminal`.
+
+3. **Navigate to the Server Directory**
+   - Type the following command, replacing `(path_to_server)` with the actual path to your server directory:
+     ```sh
+     cd (path_to_server)
+     ```
+   - You can copy the path of the server and paste it into the terminal. For example:
+     ```sh
+     cd "path_to_server"
+     ```
+
+4. **Run the Server**
+   - Once you are in the server directory, run the following command:
+     ```sh
+     node Express.js
+     ```
+   - You should see the message: `Example app listening on port 3007`.
+
+5. **Open the Browser**
+   - Open your browser and go to:
+     ```sh
+     localhost:3007
+     ```
+   - Here, you can add your data.
+ 
 - Create JSON Data: Click on the "Create" button to generate a new JSON blob. This will assign a unique identifier to your data.
-- Modify Data: Use the provided editor to modify the JSON data as per your requirements.
-- Save Data: Once you're satisfied with the changes, click on the "Save" button to store the data.
-- Access Data: You can access your JSON data anytime by using the unique identifier provided after saving.
-### API Usage
 
-- The JSON Blob Website provides a simple API to interact with the stored data. Here are the available endpoints:
 
-- GET /api/{identifier}: Retrieve the JSON data associated with the provided identifier.
-- POST /api: Create a new JSON blob with the provided data. This handles the create property. 
-- DELETE /api/{identifier}: Delete the JSON data associated with the provided identifier.
-[![Netlify Status](https://api.netlify.com/api/v1/badges/38e904c2-f575-4810-b9c2-6212c77e3cff/deploy-status)](https://app.netlify.com/sites/gentle-mousse-6cd628/deploys)
